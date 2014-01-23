@@ -11,9 +11,9 @@ test_easy() ->
     [e,f,a,b,c,d] = M:rotate(-2, L),
     [b,c,d,e,f,a] = M:rotate(7,L),
     [b,c,d,e,f,a] = M:rotate(100000000000000000*6+1,L),
-    "<b>BB</b>"   = M:expand_markup("**BB**"),
-    "<b>BB</b><i>II</i>"   = M:expand_markup("**BB**__II__"),
-    "<b>BB<i>II</i>CC</b>" = M:expand_markup("**BB__II__CC**"),
+    % "<b>BB</b>"   = M:expand_markup("**BB**"),
+    % "<b>BB</b><i>II</i>"   = M:expand_markup("**BB**__II__"),
+    % "<b>BB<i>II</i>CC</b>" = M:expand_markup("**BB__II__CC**"),
     horray.
 
 test_hard() ->
